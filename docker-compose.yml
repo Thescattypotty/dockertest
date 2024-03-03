@@ -10,10 +10,10 @@ services:
       - NODE_ENV=development
 
   frontend:
-    build: ./frontend
+    build: ./Frontend
     ports:
       - "3000:3000"
     volumes:
-      - ./frontend:/usr/src/app
+      - ./Frontend:/usr/src/app
     environment:
       - NODE_ENV=development
